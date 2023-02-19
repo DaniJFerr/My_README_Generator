@@ -82,8 +82,11 @@ const questions= () => {
 
 
 // function to initialize program
-function init() {
-
+const init = async () => {
+    const answers = await questions();
+    const generate = generateMarkdown(answers);
+    await writeFile("README.md", generate);
+    console.log(' ☑ README.md created!');
 }
 
 // function call to initialize program
