@@ -4,10 +4,65 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-const questions = [
-
-];
-
+const questions= () => {
+    return inquirer.prompt([
+        {
+            type: "input",
+            name: "title",
+            message: "What is the project title?",
+        },
+        {
+            type: "input",
+            name: "description",
+            message: "Write a brief description of your project: "
+        },
+        {
+            type: "input",
+            name: "installation",
+            message: "Describe the installation process if any: ",
+        },
+        {
+            type: "input",
+            name: "usage",
+            message: "What is this project usage for?",
+            choices: [
+                "Html",
+                "Css",
+                "Node.js",
+                "JavaScript"
+            ]
+        },
+        {
+            type: "list",
+            name: "license",
+            message: "Chose the appropriate license for this project: ",
+            choices: [
+                "Apache",
+                "Academic",
+                "GNU",
+                "ISC",
+                "MIT",
+                "Mozilla",
+                "Open"
+            ]
+        },
+        {
+            type: "input",
+            name: "credits",
+            message: "Who are the contributors of this projects?"
+        },
+        {
+            type: "input",
+            name: "features",
+            message: "What are the features of this project? "
+        },
+        {
+            type: "input",
+            name: "tests",
+            message: "Is there a test included?"
+        },
+    ]);
+};
 // function to write README file
 function writeToFile(fileName, data) {
 }
