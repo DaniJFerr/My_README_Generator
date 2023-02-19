@@ -64,8 +64,22 @@ const questions= () => {
     ]);
 };
 // function to write README file
-function writeToFile(fileName, data) {
-}
+    const writeFile = (fileName, data) => {
+        return new Promise((resolve, reject) => {
+            fs.writeFile(path.join(process.cwd(), fileName), data, err => {
+                if (err) {
+                    reject(err);
+                    return;
+                }
+    
+                resolve({
+                    ok: true,
+                    message: '☑ README.md created!' 
+                });
+            }); 
+        }); 
+    };
+
 
 // function to initialize program
 function init() {
