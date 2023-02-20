@@ -173,7 +173,7 @@ const createHTMLFile = async (cb = () => {}) => {
   // function to initialize program
   const init = async () => {
     
-    await writeFile("README.md", generate);
+    await writeFile("MY_README.md", generate);
     createHTMLFile(() => console.log(' ☑ index.html created!'));
     console.log(' ☑ README.md created!');
   }
