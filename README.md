@@ -4,16 +4,15 @@
 
 Is the application that dynamically generates a professional README.md file from a user's input 
 
-- This project is the bootcamp final project for the modeule 11
-- The was create as way to pracite my skills using node.js
-- I have learned how to use npm mudules as inquerer, fs and promise 
+- It is the final project for the 11th module of the Bootcamp
+- The project was created to practice my node.js skills
+- As a result, I have learned how to use Npm modules as inquerer, fs, and promises
 
 ## Table of Contents (Optional)
 
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
 
 ## Installation
