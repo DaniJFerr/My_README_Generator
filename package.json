@@ -1,12 +1,27 @@
 {
-  "name": "starter",
+  "name": "my_readme_generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Description 📝  ## Table of Contents - [Description](#description) - [Installation](#installation) - [Usage](#usage) - [License](#license) - [Credits](#credits) - [Tests](#tests) ## Installation 💾  ## Usage 🎯  ## License ![badge](https://img.shields.io/badge/license-Apache-brightgreen) <br /> This application is covered by the Apache license.  ## Credits 🤝 undefined ## Tests 🚦 <br />  This Project was created by [My_README_Generator](https://github.com/DaniJFerr/My_README_Generator)",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniJFerr/My_README_Generator.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaniJFerr/My_README_Generator/issues"
+  },
+  "homepage": "https://github.com/DaniJFerr/My_README_Generator#readme",
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "jsdom": "^21.1.0",
+    "module": "^1.2.5",
+    "path": "^0.12.7",
+    "utils": "^0.3.1"
+  }
 }
