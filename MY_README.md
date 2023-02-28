@@ -13,10 +13,10 @@
 - [Tests](#tests)
 
 ## Installation
-💾 You need to clone the GitHub repository into your directory and execute the command line in your git terminal in order to install and run the web app: node index.js
+💾 To install adne execute the web app is ncessary to clone gi into your directoy and exceute the command line on your git terminal: node index.js
 
 ## Usage
-🎯 The project was created to practice my node.js skills
+🎯 The was create as way to pracite my skills using node.js
 
 ## Features
 🚀 Node.js
@@ -28,7 +28,7 @@
 🚨no 
 
 ## Email
-📧 danwev.wrokstation@gmail.com
+📧 danweb.workstation@gmail.com
 
 ## gitHub
 👁️‍🗨️ ![My GitHub](https://github.com/DaniJFerr/My_README_Generator)

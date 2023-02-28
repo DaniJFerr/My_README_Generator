@@ -145,17 +145,15 @@ const data =`
 
 <div class="card">
   <div class="card-body">
-  <h5>👁️‍🗨️ gitHub:<p><a href="[My GitHub](${answers.gitHub})"></p></h5>
+  <h5>👁️‍🗨️ gitHub:<p><a href="(${answers.gitHub})"></p></h5>
   </div>
 </div>
-
 
 <div class="card">
   <div class="card-body">
   <h5>🥇 Credits:<p>${answers.credits}</p></h5>
   </div>
 </div>
-  </div>
 
 <div class="card">
   <div class="card-body">

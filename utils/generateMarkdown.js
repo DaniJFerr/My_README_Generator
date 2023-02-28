@@ -26,9 +26,6 @@ const generateMarkdown = (data) =>{
 
 <br />
 
-## Tests
-🚨${data.tests}
-
 ## Email
 📧 ${data.email}
 
@@ -36,7 +33,10 @@ const generateMarkdown = (data) =>{
 👁️‍🗨️ ![My GitHub](${data.gitHub})
 
 ## Credits
-🤝 ${data.credits}
+🥇 ${data.credits}
+
+## Tests
+🚨${data.tests}
 
 ## License
 📜 This application is covered by the ${data.license} license.
