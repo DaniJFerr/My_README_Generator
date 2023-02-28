@@ -5,7 +5,7 @@
 Is the application that dynamically generates a professional README.md file from a user's input 
 
 - This project is the bootcamp final project for the modeule 11
-- The was create as way to pracite my skills using node.js
+- The project was created as way to pracite my skills using node.js
 - I have learned how to use npm mudules as inquerer, fs and promise 
 
 ## Table of Contents (Optional)
@@ -18,7 +18,7 @@ Is the application that dynamically generates a professional README.md file from
 
 ## Installation
 
-To install adne execute the web app is ncessary to clone gi into your directoy and exceute the command line on your git terminal: 
+To install and execute the web app is ncessary to clone gi into your directoy and exceute the command line on your git terminal: 
 
 ```bash
 node index.js
