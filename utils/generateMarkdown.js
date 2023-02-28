@@ -20,21 +20,28 @@ const generateMarkdown = (data) =>{
 ## Usage
 🎯 ${data.usage}
 
-## Usage
+## Features
 🚀 ${data.features}
-![badge](https://img.shields.io/badge/${data.features}-yellow)
+![badge](https://img.shields.io/badge/features-${data.features}-yellow)
 
 <br />
 
 ## Tests
 🚨${data.tests}
 
+## Email
+📧 ${data.email}
+
+## gitHub
+👁️‍🗨️ ![My GitHub](${data.gitHub})
+
+## Credits
+🤝 ${data.credits}
+
 ## License
 📜 This application is covered by the ${data.license} license.
 ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
 
-## Credits
-🤝 ${data.credits}
 
 <br />
  This Project was created by [My_README_Generator](https://github.com/DaniJFerr/My_README_Generator) 

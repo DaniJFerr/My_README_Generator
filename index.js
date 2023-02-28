@@ -43,11 +43,7 @@ import generateMarkdown from "./utils/generateMarkdown.js";
                 "Open"
             ]
         },
-        {
-            type: "input",
-            name: "credits",
-            message: "Who are the contributors of this projects?"
-        },
+
         {
             type: "list",
             name: "features",
@@ -66,9 +62,27 @@ import generateMarkdown from "./utils/generateMarkdown.js";
             name: "tests",
             message: "Is there a test included?"
         },
+        {
+            type: "input",
+            name: "credits",
+            message: "Who are the contributors of this projects?"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is the email contact?"
+        },
+        {
+            type: "input",
+            name: "gitHub",
+            message: "What is the gitHub Project?"
+        },
+
     ]);
 
 };
+
+
 
 const answers = await questions();
 const generate = generateMarkdown(answers);
@@ -81,6 +95,7 @@ const data =`
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mfglabs_iconset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>My_README_Generator</title>
 </head>
@@ -124,6 +139,26 @@ const data =`
 
 <div class="card">
   <div class="card-body">
+  <h5>📧 Email:<p><a href="mailto:${answers.email}"></p></h5>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+  <h5>👁️‍🗨️ gitHub:<p><a href="[My GitHub](${answers.gitHub})"></p></h5>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-body">
+  <h5>🥇 Credits:<p>${answers.credits}</p></h5>
+  </div>
+</div>
+  </div>
+
+<div class="card">
+  <div class="card-body">
   <h5>🚨 Tests:<p>${answers.tests}</p></h4>
   </div>
 </div>
@@ -133,13 +168,6 @@ const data =`
   <h5>📜 License:<p><object data="https://img.shields.io/badge/license-${answers.license}-brightgreen"></object></p></h5>
   </div>
 </div>
-
-<div class="card">
-  <div class="card-body">
-  <h5>🥇 Credits:<p>${answers.credits}</p></h5>
-  </div>
-</div>
-  </div>
 
   <div class="footer">My_README_Generator by Daniel.F &copy; 2023</div>
 </body>
@@ -173,7 +201,7 @@ const createHTMLFile = async (cb = () => {}) => {
   // function to initialize program
   const init = async () => {
     
-    await writeFile("README.md", generate);
+    await writeFile("MY_README.md", generate);
     createHTMLFile(() => console.log(' ☑ index.html created!'));
     console.log(' ☑ README.md created!');
   }
